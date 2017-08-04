@@ -63,6 +63,13 @@ redux的一个中间件 saga.主要用于处理异步请求.比如提供了redux
 - yield* : 排序
 
 
+
+## react-persist
+本地存储方案
+
+- persistStore(store,[config,callback]): 
+
+
 ## seamless-immutable
 
 seamless-immutable 提供了小巧的不可变对象支持, 类似于其他immutable工具包一样, 不可变对象在处理state时候讲更加快捷和安全
@@ -89,3 +96,5 @@ obj.setIn('key', data)
 - Immutable.setIn/getIn: 支持内嵌
 - Immutable.update/updateIn: 
 - Immutable.without: 删除
+
+
