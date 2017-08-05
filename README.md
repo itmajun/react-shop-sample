@@ -97,4 +97,31 @@ obj.setIn('key', data)
 - Immutable.update/updateIn: 
 - Immutable.without: 删除
 
+## react-navigator
+官方推荐的导航组件
+
+- StackNavigator: 一个导航的堆栈
+```javascript
+StackNavigator(RouteConfigs, StackNavigatorConfig)
+```
+- TabNavigator: tab切换效果
+```javascript
+TabNavigator(RouteConfigs, TabNavigatorConfig)
+```
+- DrawerNavigator: drawer效果
+
+1. 如何调整默认的样式?(Tabnavigator举例)
+我们通过修改TabNavigatorConfig
+- tabBarComponent: 'TabBarBottom '(ios默认),'TabBarTop'(android默认)
+- tabBarPosition: 位置 'top', 'bottom'
+- tabBarOptions:
+    - activeTintColor : 激活颜色
+    - activeBackgroundColor : 激活状态背景色
+    - inactiveTintColor : 默认颜色
+    - inactiveBackgroundColor : 默认背景色
+    - style: Tab bar样式(整体)
+    - labelStyle: 文本样式 
+    - tabStyle : 单个tab选项的样式
+    - iconStyle: 图标样式
+
 
