@@ -1,5 +1,8 @@
 import React,{Component} from 'react'
 import {Image, Text, View} from "react-native";
+var my = require('../image/tabbar_my_normal.png')
+var my_select = require('../image/tabbar_my_selected.png')
+
 
 export default class UserScreen extends Component {
 
@@ -7,7 +10,7 @@ export default class UserScreen extends Component {
         tabBarLabel: '我的',
         tabBarIcon: ({focused,tintColor}) => {
            return  <Image
-                source={focused ? require("../image/nav_shop_selected.png"): require("../image/nav_shop_normal.png")}
+                source={focused ? my_select: my}
                 style={[{width: 30, height: 30},{tintColor: tintColor}]}
             />
         }

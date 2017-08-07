@@ -123,5 +123,9 @@ TabNavigator(RouteConfigs, TabNavigatorConfig)
     - labelStyle: 文本样式 
     - tabStyle : 单个tab选项的样式
     - iconStyle: 图标样式
+    
+    
+### react-native-swiper
+
 
 

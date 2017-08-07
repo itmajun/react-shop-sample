@@ -24,16 +24,18 @@ const AppNavigator = TabNavigator({
 
 },{
     tabBarPosition: 'bottom',
+    swipeEnabled: false,
+    lazyLoad: true,
     tabBarOptions: {
         showLabel: true,
         showIcon: true,
         indicatorStyle: {
             height: 0
         },
-        inactiveTintColor: 'black',
-        activeTintColor: 'red',
+        inactiveTintColor: '#CFCFCF',
+        activeTintColor: '#CA4C4C',
         style : {
-            backgroundColor: 'white',
+            backgroundColor: '#333333',
             marginBottom:0,
             paddingBottom: 0,
         },
@@ -46,8 +48,9 @@ const AppNavigator = TabNavigator({
             height: 30,
         },
         tabStyle: {
-            padding: 0,
-            paddingTop: 0
+            // padding: 0,
+            // paddingTop: 0
+            backgroundColor: '#333333'
         }
     }
 })
