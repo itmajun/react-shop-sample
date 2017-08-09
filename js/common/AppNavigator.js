@@ -26,6 +26,7 @@ const AppNavigator = TabNavigator({
     tabBarPosition: 'bottom',
     swipeEnabled: false,
     lazyLoad: true,
+    initialRouteName: 'MainScreen',
     tabBarOptions: {
         showLabel: true,
         showIcon: true,

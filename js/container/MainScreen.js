@@ -1,7 +1,9 @@
 import React,{Component} from 'react'
-import {Image, Text, View, StyleSheet, Dimensions, ScrollView} from "react-native";
+import {Image, Text, View, StyleSheet, Dimensions, ScrollView, PixelRatio} from "react-native";
 import Swiper from 'react-native-swiper'
 import SearchHeader from "../common/component/SearchHeader";
+import ShortCut from "../common/component/ShortCut";
+import NewAdd from "../common/component/NewAdd";
 
 
 var shop = require('../image/tabbar_home_normal.png')
@@ -36,7 +38,7 @@ export default class MainScreen extends Component {
             return (
                 <View>
                     <SearchHeader/>
-                    <ScrollView>
+                    <ScrollView style= {{backgroundColor: '#F0F2F5'}} showsVerticalScrollIndicator={false}>
                         <Swiper width={width} height={240}  autoplay >
                             <Image source={{uri: 'http://ac-c6scxa78.clouddn.com/54fe022399902788.jpg'}}
                                    style={{flex: 1}}/>
@@ -48,8 +50,12 @@ export default class MainScreen extends Component {
                                    style={{flex: 1}}/>
                         </Swiper>
                         <ShortCut/>
-
+                        <NewAdd/>
+                        <NewAdd/>
+                        <NewAdd/>
                     </ScrollView>
+
+
                 </View>
             )
         } else {

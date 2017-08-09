@@ -32,10 +32,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'white',
         borderBottomColor: '#ccc',
         borderBottomWidth: 0.5,
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#DF5E68',
         position: 'absolute',
         top: 0,
         left: 0,
@@ -56,8 +55,8 @@ const styles = StyleSheet.create({
     },
 
     searchIcon: {
-        width: 25,
-        height: 25,
+        width: 15,
+        height: 15,
         tintColor: 'gray'
     },
 
