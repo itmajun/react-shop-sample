@@ -13,7 +13,7 @@ let window = {
     height: Dimensions.get('window').height,
 }
 
-export default class SearchHeader extends Component {
+export default class CategoryHeader extends Component {
 
     render() {
         return (
@@ -32,25 +32,21 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        borderBottomColor: '#ccc',
-        borderBottomWidth: 0.5,
-        backgroundColor: '#DF5E68',
-        // position: 'absolute',
-        // top: 0,
-        // left: 0,
-        // right: 0,
-        // height: 50,
-        // zIndex: 10,
+        borderBottomColor: '#E3E3E3',
+        borderBottomWidth: 1,
+        backgroundColor: '#F9F9F9',
     },
     searchInput: {
         flexDirection: 'row',
         alignItems: 'center',
         height: 32,
-        width: window.width - 60 - 15 * 2,
+        width: window.width - 20,
         margin: 6,
         padding: 10,
-        backgroundColor: '#FCEFF0',
+        backgroundColor: '#FFFFFF',
         borderRadius: 2,
+        borderColor: '#D5D5D5',
+        borderWidth: 1,
     },
 
     searchIcon: {
