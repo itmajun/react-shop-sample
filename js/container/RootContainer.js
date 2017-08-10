@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Text, View} from "react-native";
 import {connect} from 'react-redux'
-import AppNavigator from "../common/AppNavigator";
+import AppStack from "../common/AppNavigator";
 
 
 /**
@@ -11,7 +11,7 @@ class RootContainer extends Component {
 
     render() {
         return (
-           <AppNavigator/>
+           <AppStack/>
         )
     }
 }

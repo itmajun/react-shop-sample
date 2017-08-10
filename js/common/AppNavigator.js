@@ -1,12 +1,10 @@
-
-
-import {TabBarBottom, TabNavigator} from "react-navigation";
+import {StackNavigator, TabNavigator} from "react-navigation";
 import MainScreen from "../container/MainScreen";
-import {Image} from "react-native";
 import CategoryScreen from "../container/CategoryScreen";
 import CartScreen from "../container/CartScreen";
 import UserScreen from "../container/UserScreen";
 import React from 'react'
+import GoodsScreen from "../container/GoodsScreen";
 
 const AppNavigator = TabNavigator({
     MainScreen: {
@@ -23,10 +21,11 @@ const AppNavigator = TabNavigator({
     }
 
 },{
+    title: null,
     tabBarPosition: 'bottom',
     swipeEnabled: false,
     lazyLoad: true,
-    initialRouteName: 'CategoryScreen',
+    initialRouteName: 'MainScreen',
     tabBarOptions: {
         showLabel: true,
         showIcon: true,
@@ -56,4 +55,17 @@ const AppNavigator = TabNavigator({
     }
 })
 
-export default AppNavigator
+const AppStack = StackNavigator({
+    Root: {
+        screen: AppNavigator,
+        navigationOptions: {
+            header: null,
+        }
+    },
+    GoodsScreen: {
+        screen: GoodsScreen
+    }
+})
+
+
+export default AppStack

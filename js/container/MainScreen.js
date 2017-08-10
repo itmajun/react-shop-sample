@@ -1,5 +1,5 @@
-import React,{Component} from 'react'
-import {Image, Text, View, StyleSheet, Dimensions, ScrollView, PixelRatio} from "react-native";
+import React, {Component} from 'react'
+import {Dimensions, Image, ScrollView, StyleSheet, View} from "react-native";
 import Swiper from 'react-native-swiper'
 import SearchHeader from "../common/component/SearchHeader";
 import ShortCut from "../common/component/ShortCut";
@@ -50,7 +50,7 @@ export default class MainScreen extends Component {
                                    style={{flex: 1}}/>
                         </Swiper>
                         <ShortCut/>
-                        <NewAdd/>
+                        <NewAdd navigation={this.props.navigation}/>
                         <NewAdd/>
                         <NewAdd/>
                     </ScrollView>
@@ -65,6 +65,9 @@ export default class MainScreen extends Component {
     }
 
 }
+
+
+
 
 const styles = StyleSheet.create({
     main: {
